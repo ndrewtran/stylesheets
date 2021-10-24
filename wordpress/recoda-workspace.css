@@ -1,0 +1,800 @@
+/*** ----- COLOURS ----- ***/
+
+:root {
+    --custom-dark: #0D1014 !important;
+    --custom-light: #ffffff !important;
+    --custom-highlight1: #708cc3 !important;
+    --custom-highlight2: #00dcff !important;
+    --oxy__bg-2: #151a23 !important;
+    --oxy__bg-3: #1d2431 !important;
+    --oxy__bg-4: #293243 !important;
+    --oxy__bg-5: #4b5e83 !important;
+    --theme-main: var(--oxy__bg-2) !important;
+    --theme-lighter: var(--oxy__bg-4) !important;
+    --theme-lighter-lighter: var(--oxy__bg-5) !important;
+    --theme-darker: var(--oxy__bg-2, #151a23) !important;
+    --theme-darker-darker: var(--oxy__bg-2) !important;
+    --theme-input: var(--oxy__bg-4) !important;
+    --theme-select: var(--oxy__bg-4) !important;
+    --theme-click: var(--oxy__bg-4) !important;
+    --theme-subtab: var(--theme-lighter) !important;
+    --theme-add-section-accordion: var(--theme-main) !important;
+    --border-darker: 1px solid var(--theme-darker) !important;
+    --border-lighter: 1px solid var(--theme-lighter) !important;
+    --text-one: var(--custom-light) !important;
+    --text-color: var(--custom-light) !important;
+    --oxy__action: #449dff !important;
+    --active-blue: var(--oxy__action) !important;
+    --active-blue-lighter: #6bb2ff !important;
+    --active-style: #5bf44f !important;
+    --active-color: #5bf44f !important;
+}
+
+/* Top bar */
+#tbf-side-manager {
+    border-left: 2px solid var(--oxy__bg-3) !important;
+    background: var(--oxy__bg-3) !important;
+}
+.stv-radio-button:checked + label {
+    background: var(--oxy__bg-5) !important;
+}
+
+/* Breakpoints */
+.oxygen-media-query-dropdown li:hover {
+    background: var(--oxy__bg-5) !important;
+}
+.oxygen-media-query-dropdown li img:nth-child(3):hover {
+    background: var(--oxy__bg-5) !important;
+}
+.oxygen-media-query-dropdown li .oxygen-current-media-query {
+    background: var(--oxy__bg-5) !important;
+}
+
+/* Swiss knife */
+#oxygen-topbar div:not(.oxygen-left-button-wrap, .oxygen-save-button, .oxygen-add-button):is(.oxygen-toolbar-button, .oxygen-toolbar-button-dropdown-option):hover {
+    background: var(--oxy__bg-2) !important;
+}
+
+/* Search */
+.oxygen-add-searchbar-wrapper, .oxygen-add-searchbar {
+    background: var(--oxy__bg-2) !important;
+}
+
+/* Add element item */
+.oxygen-add-section-element {
+    background-color: var(--oxy__bg-4) !important;
+    color: var(--custom-light) !important;    
+}
+.oxygen-add-section-element:hover {
+    background-color: var(--oxy__bg-2) !important;
+    box-shadow: 0px 0px 0px 2px var(--custom-highlight1) !important;
+}
+
+/* Add element accordion */
+.oxygen-add-section-accordion {
+    background: var(--oxy__bg-3) !important;
+    border-color: var(--oxy__bg-2) !important;
+}
+.oxygen-add-section-accordion:hover {
+    background: var(--oxy__bg-5) !important;
+}
+.oxygen-add-section-accordion-contents {
+    background: var(--oxy__bg-2) !important;
+}
+.oxygen-add-section-accordion-contents h2 {
+    background: var(--oxy__bg-2) !important;
+    color: var(--custom-light) !important;
+}
+
+/* Add element subsection */
+.oxygen-add-section-subsection {
+    background-color: var(--oxy__bg-4) !important;
+    box-shadow: 0px 0px 0px 1px var(--oxy__bg-5) !important;
+}
+.oxygen-add-section-subsection:hover {
+    background-color: var(--oxy__bg-5) !important;
+    box-shadow: 0px 0px 0px 0px var(--custom-dark) !important;
+}
+
+/* Breadcrumbs */
+.oxygen-sidebar-breadcrumb {
+    background: var(--oxy__bg-5) !important;
+}
+.oxygen-sidebar-breadcrumb-current {
+    color: var(--custom-light) !important;
+}
+
+/* Subtabs */
+.oxygen-effects-tab .oxygen-sidebar-advanced-subtab, .oxygen-gradient-subtab.oxygen-sidebar-advanced-subtab {
+    background-color: var(--oxy__bg-4) !important;
+}
+.oxygen-effects-tab .oxygen-sidebar-advanced-subtab:hover, .oxygen-gradient-subtab.oxygen-sidebar-advanced-subtab:hover {
+    background-color: var(--oxy__bg-5) !important;    
+}
+
+/* Selectors */
+div:not(.oxygen-active-select.oxygen-active-classes-select) > ul.oxygen-classes-dropdown li:nth-child(5) {
+    background: var(--oxy__bg-3) !important;
+    border: 1px solid var(--oxy__bg-2) !important;
+    color: #34b9ff !important; 
+}
+div:not(.oxygen-active-select.oxygen-active-classes-select) > ul.oxygen-classes-dropdown li:nth-child(n+6) {
+    background: var(--oxy__bg-3) !important;
+    border: 1px solid var(--oxy__bg-2) !important;
+    color: #00dfab !important;
+}
+#oxygen-ui li:not(.oxygen-classes-dropdown-suggestions):hover {
+    background: var(--oxy__bg-4) !important;
+}
+#oxygen-ui .oxygen-classes-dropdown li:first-child {
+    background: var(--oxy__bg-4) !important;
+}
+.oxygen-classes-dropdown li:first-child {
+    background: var(--oxy__bg-4) !important;
+}
+.oxygen-active-selector-box-state, .oxygen-active-selector-box-id {
+    background: var(--active-blue) !important;
+}
+.oxygen-active-selector-box-state:hover {
+    background: var(--oxy__bg-5) !important;
+}
+.ct-css-node-folder:before {
+    color: var(--oxy__bg-5) !important;
+} 
+
+/* Side buttons */
+#tbf-advancer div:hover {
+    background: var(--oxy__bg-5) !important;
+}
+#tbf-advancer div div {
+    color: var(--custom-light) !important;
+}
+
+/* Defaults */
+.oxygen-button-list .oxygen-button-list-button-default {
+    outline: 1px dotted var(--custom-highlight2) !important;
+    color: var(--custom-light) !important;
+    background: var(--oxy__bg-4) !important;
+}
+
+/* Units */
+.oxygen-measure-box-selected-unit {
+    color: var(--active-blue) !important;
+}
+
+/* Oxygen toolbar menu  */
+.oxygen-toolbar-button-dropdown {
+    background-color: var(--oxy__bg-2) !important;
+}
+
+/* Checkboxes */
+.oxygen-checkbox-checkbox {
+    color: var(--custom-light) !important; 
+}
+.oxygen-checkbox-checkbox:before {
+    border: 2px solid var(--active-blue) !important;
+}
+
+/* Controls */
+.oxygen-control-wrapper a, .oxygen-control-row a {
+    background: var(--active-blue) !important;
+    color: var(--custom-light) !important;
+}
+.oxygen-transform-control-wrap {
+    box-shadow: 0 0 0 2px var(--oxy__bg-4) !important;
+}
+.oxygen-apply-all-trigger {
+    color: var(--custom-light) !important;
+}
+.oxygen-inset-controls {
+    background-color: var(--custom-dark) !important;
+}
+#ct-controller-ui #oxygen-sidebar .oxygen-icon-button-list-button-default .oxygen-icon-button-list-option-icon-wrapper {
+    background: var(--active-blue) !important;
+}
+.oxygen-icon-button-list-button-default .oxygen-icon-button-list-option-label {
+    background: initial !important;
+}
+
+/* Code Editor */
+.oxygen-code-editor-apply {
+    background: var(--active-blue) !important;
+    color: var(--custom-light) !important;
+}
+:is(.oxygen-sidebar-code-editor-wrap, .rews-parent-box) :is(.CodeMirror-scroll, .CodeMirror-lines) {
+    background: var(--custom-dark) !important;
+}
+.oxygen-sidebar-code-editor-wrap :is(.CodeMirror-linenumbers, .CodeMirror-gutters) {
+    background: var(--oxy__bg-2) !important;
+}
+
+/* Blockpad view */
+.rews-rebin-settings {
+    background: var(--oxy__bg-4) !important;
+    border-bottom: 2px solid var(--oxy__bg-2) !important;
+}
+.recoda-lpane .rews-rebin-strip {
+    background: var(--oxy__bg-4) !important;
+}
+.rews-rebin-strip button {
+    background: var(--active-blue) !important;
+}
+#ct-controller-ui .rews-parent-box .CodeMirror .CodeMirror-,
+.rews-parent-box :is(.rews-code-container-1, .rews-code-container-2, .rews-code-container-3) .CodeMirror{
+    background: var(--custom-dark) !important;
+}
+
+/* New color */
+.oxygen-global-colors-new-color-dialog {
+    background-color: var(--oxy__bg-2) !important;
+}
+.oxygen-add-global-color-button {
+    background: var(--active-blue) !important;
+    color: var(--custom-light) !important;
+}
+.oxygen-file-input-browse, .oxygen-dynamic-data-browse {
+    background-color: var(--oxy__bg-5) !important;
+}
+
+/* Selectors tab */
+.ct-selectors-tab .ct-button {
+    color: var(--custom-light) !important;
+    background: var(--oxy__bg-5) !important;
+    border: 1px solid var(--oxy__bg-2) !important;
+}
+.ct-selectors-tab .ct-button:hover {
+    background: var(--active-blue) !important;
+}
+
+/* Stylesheets tab */
+.ct-style-sheets-tab .ct-button {
+    background: var(--oxy__bg-5) !important;
+    color: var(--custom-light) !important;
+    border: 1px solid var(--oxy__bg-2) !important;
+}
+.ct-style-sheets-tab .ct-button:hover {
+    background: var(--active-blue) !important;
+}
+.oxygen-sidebar-template-button {
+    background: var(--active-blue) !important;
+    color: var(--custom-light) !important;
+}
+
+/* Stylesheets */
+.ct-css-node-header.ct-css-node-selected, .ct-css-node-header:hover, .ct-css-node-hilite {
+    color: var(--custom-light) !important;
+}
+.ct-css-node-header.ct-css-node-selected, .ct-css-node-header:hover, .ct-css-node-hilite:hover {
+    background: var(--oxy__bg-3) !important;
+}
+
+/* Structure/DOM tree */
+.ct-dom-tree-parent.ct-dom-tree-node-selected .ct-icon:before {
+    color: var(--custom-light) !important;
+}
+.ct-dom-tree-node-header, .ct-dom-tree-body-anchor, .ct-elements-managers-top, .ct-dom-tree-node-header, .dom-tree-disabled .ct-dom-tree-node-header {
+    background: var(--oxy__bg-4) !important;
+}
+:is(.ct-dom-tree-node-header, .ct-dom-tree-body-anchor, .ct-dom-tree-node-header, .dom-tree-disabled .ct-dom-tree-node-header):hover {
+    background: var(--oxy__bg-5) !important;
+}
+.ct-dom-tree-node-selected {
+    position: relative !important;
+    border-radius: 4px !important;
+}
+.dom-tree-disabled .ct-dom-tree-node-header:hover {
+    background: var(--oxy__bg-5) !important;
+}
+.ct-elements-managers-top :is(.ct-butt-expand-all, .ct-butt-collapse-all) {
+    color: var(--custom-light) !important;
+    background: var(--oxy__bg-5) !important;
+}
+.ct-elements-managers-top :is(.ct-butt-expand-all, .ct-butt-collapse-all):hover {
+    background: var(--active-blue) !important;
+}
+.dom-tree-disabled > div > .ct-dom-tree-node-header, .dom-tree-disabled > div > .ct-dom-tree-node-header:hover {
+    background: var(--oxy__bg-5) !important;
+}
+
+/* History */
+.ct-history-tab .ct-button {
+    background: var(--active-blue) !important;
+    color: var(--custom-light) !important;
+}
+.ct-history-items .ct-history-item {
+    background: var(--oxy__bg-4) !important;
+}
+.ct-history-items .active {
+    background: var(--oxy__bg-5) !important;
+}
+.ct-history-items .active * {
+    color: var(--custom-light) !important;
+}
+
+/* Bottom bar */
+#rews-command-container {
+    background: var(--oxy__bg-3) !important;
+    border-top-color: var(--custom-dark) !important; 
+}
+.rews-cmd-right-wrap, .rews-cmd-left-wrap, .rews-cmd-center-wrap, #tbf-cl, #tbf-cl .cm-s-dracula.CodeMirror, #tbf-cl .cm-s-dracula .CodeMirror-gutter, #rews-command-container .tbf-item {
+    background: var(--custom-dark) !important;
+}
+.tbf-item.c input:checked + label svg {
+    fill: var(--active-blue) !important;
+}
+#tbf-cl #label-for-cli {
+    padding: 0px 4px 6px 4px !important;
+}
+#tbf-cl .CodeMirror-lines {
+    background: var(--oxy__bg-4) !important;
+}
+#rews-canvas-settings, #rews-responsive-settings {
+    border: 2px solid var(--oxy__bg-4) !important;
+}
+:is(#rews-canvas-settings, #rews-responsive-settings) .rews-title {
+    background: var(--oxy__bg-3) !important;
+}
+#rews-canvas-settings #wsCanvasReset {
+    background: var(--active-blue) !important;
+    color: var(--custom-light) !important;
+}
+.rews-input-item p {
+    color: var(--active-blue) !important;
+}
+.rews-settings-item input:focus {
+    border: 1px solid var(--active-blue) !important;
+}
+
+/* Conditions */
+.oxygen-condition-builder-add-condition a {
+    background: var(--active-blue) !important;
+    color: var(--custom-light) !important;
+}
+
+/* Import Classes */
+textarea#swk-classes, select#swk-class-folders {
+    color: var(--custom-light) !important;
+    background-color: var(--oxy__bg-3) !important;
+    border: 2px solid var(--oxy__bg-4) !important;
+}
+textarea#swk-classes:hover, select#swk-class-folders:hover {
+    color: var(--custom-light) !important;
+    background-color: var(--oxy__bg-3) !important;
+    border: 2px solid var(--active-blue) !important;
+}
+
+/* Recoda alerts */
+#rews-alert {
+    background: var(--oxy__bg-2) !important;
+}
+
+/* Viewport */
+#resizer-lp, #resizer-rp, #ct-viewport-container {
+    background-color: #dddddd !important;
+}
+
+/* Design Sets */
+.oxygen-add-section-library-menu-subcategories a {
+    background: var(--oxy__bg-3) !important;
+    background-color: var(--oxy__bg-3) !important;
+    box-shadow: 0px 0px 0px 1px var(--oxy__bg-4) !important;
+}
+.oxygen-add-section-library-menu-subcategories a:hover {
+    background: var(--oxy__bg-4) !important;
+}
+.oxygen-add-section-library-flyout-panel {
+    background: var(--oxy__bg-2) !important;
+}
+
+/*** ----- EVERYTHING ELSE ----- ***/
+
+/* Topbar */
+.oxygen-toolbar * {
+    border: none !important;
+}
+
+#tbf-side-manager {
+    width: calc(var(--sidepanel-width) - 60px) !important; 
+    margin-left: 20px !important;
+}
+
+/* Add */
+.oxygen-add-button img {
+    margin: 0 !important;
+}
+
+/* Breakpoints */
+.oxygen-media-query-dropdown li {
+    min-width: 52px !important;
+}
+
+.oxygen-media-query-dropdown li > img {
+    padding: 0 !important;
+    grid-row: 1/3 !important;
+}
+
+.oxygen-media-query-dropdown li img:nth-child(3) {
+    background: initial !important;
+    position: relative !important;
+    width: 20px !important;
+    margin: 0 auto !important;
+}
+
+/* Undo re-do */
+.oxygen-undo-redo-buttons img {
+    min-width: 20px !important;
+    max-width: 20px !important;
+}
+
+/* Swiss knife */
+.swk-debug img {
+    min-width: 24px !important;
+    max-width: 24px !important;
+    padding-bottom: 2px !important;
+}
+.swk-lock-class {
+    top: 6px !important;
+}
+
+/* Back to WP toolbar */
+.oxygen-back-to-wp-menu .oxygen-toolbar-button-dropdown a {
+    background-size: 22px !important;
+}
+.oxygen-toolbar-menus .oxygen-toolbar-button img:nth-child(5) {
+    margin-bottom: -20px !important; 
+}
+
+/* Add element item */
+.oxygen-add-section-element {
+    border: 0px !important;
+    padding: 8px 8px !important;
+    height: 60px !important;
+    border-radius: 4px !important;
+    transition-duration: 0.1s !important;
+}
+.oxygen-add-section-element img {
+    margin-bottom: 6px !important;
+}
+.oxygen-add-section-element:hover img {
+    margin-bottom: 6px !important;
+}
+.oxygen-add-section-accordion-contents:after {
+    height: 16px !important;
+    content: '' !important;
+    grid-column: 1 / -1 !important;
+}
+
+/* Add element accordion */
+.oxygen-add-section-accordion {
+    border-width: 2px !important;
+    transition-duration: 0.1s !important;
+}
+
+.oxygen-add-section-accordion-contents {
+    padding: 8px 8px !important;
+}
+
+.oxygen-add-section-accordion-contents h2 {
+    letter-spacing: 1px !important;
+    width: initial !important;
+}
+
+.oxygen-add-section-accordion-contents h2:not(:first-child) {
+    margin-top: 16px !important;
+}
+
+/* Add element subsection */
+.oxygen-add-section-subsection {
+    border: 0px !important;
+    max-width: 100% !important;
+    width: calc(100% - 18px) !important;
+    margin: 4px auto !important;
+    transition-duration: 0.2s !important;
+    margin-top: 3px !important;
+}
+.oxygen-add-section-element + .oxygen-add-section-subsection {
+    margin-top: 16px !important;
+}
+
+/* Breadcrumbs */
+.oxygen-sidebar-breadcrumb {
+    margin-top: 16px !important;
+    margin-right: 16px !important;
+    margin-left: 16px !important;
+    border-radius: 4px !important;
+}
+.oxygen-sidebar-breadcrumb-current {
+    opacity: 1 !important;
+}
+.oxygen-sidebar-flex-panel .oxygen-sidebar-breadcrumb {
+    margin-top: 0 !important;
+    margin-left: -34px !important;
+    margin-right: 0 !important;
+}
+.oxygen-sidebar-breadcrumb-icon {
+    min-width: 25px !important;
+}
+
+/* Subtabs */
+.oxygen-sidebar-advanced-subtab {
+    border-radius: 4px !important;
+}
+.oxygen-sidebar-advanced-subtab img {
+    opacity: 1 !important;
+}
+.oxygen-effects-tab .oxygen-sidebar-advanced-subtab, .oxygen-gradient-subtab.oxygen-sidebar-advanced-subtab {
+    border-radius: 4px !important;
+}
+
+/* Selectors */
+div:not(.oxygen-active-select.oxygen-active-classes-select) > ul.oxygen-classes-dropdown li:nth-child(5) {
+    padding: 10px !important;
+    margin: 0 !important;
+}
+div:not(.oxygen-active-select.oxygen-active-classes-select) > ul.oxygen-classes-dropdown li:nth-child(n+6) {
+    margin: 0 !important;
+    transition: 0.2s all !important;
+}
+.oxygen-active-selector-box {
+    padding: 12px 8px !important;
+    height: initial !important;
+}
+.oxygen-active-selector-box-state, .oxygen-active-selector-box-id {
+    opacity: 1 !important;
+    font-size: 14px !important;
+    border: none !important;
+    height: 21px !important;
+}
+div:not(.oxygen-active-select.oxygen-active-classes-select) > ul.oxygen-classes-dropdown {
+    left: initial !important;
+    gap: 5px !important;
+}
+.oxygen-active-classes-select .oxygen-classes-dropdown {
+    padding-bottom: 0 !important;
+}
+.ct-css-node-folder {
+    margin-top: 10px !important;
+}
+.ct-css-node-folder:before {
+    opacity: 1 !important;
+}
+
+/* Side buttons */
+#tbf-advancer div {
+    opacity: 1 !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+}
+#tbf-advancer div div {
+    min-height: 14px !important;
+    max-height: 14px !important;
+}
+#rews-blockpad {
+    border-top: none !important;
+}
+
+/* Defaults */
+.oxygen-measure-box-selected-unit {
+    opacity: 1 !important;
+}
+
+/* Colour preview/picker */
+.alpha-color-picker-wrap .wp-picker-container .button.wp-color-result, .alpha-color-picker-wrap a.wp-color-result {
+    width: 30px !important;
+}
+
+/* Gradient */
+.background .oxygen-gradient-subtab {
+    border-left: none !important;
+}
+
+
+/* Checkboxes */
+.oxygen-checkbox-checkbox:before {
+    border-radius: 4px !important;
+    outline: none !important;
+    margin-right: 12px !important;
+    min-width: 18px !important;
+}
+
+/* Controls */
+.oxygen-control-wrapper a, .oxygen-control-row a {
+    width: fit-content !important;
+    padding: 8px 12px !important;
+    border-radius: 4px !important;
+    opacity: 1 !important;
+    display: block !important;
+}
+.oxygen-control-row {
+    gap: 5px !important;
+}
+.oxygen-control-wrapper {
+    margin-bottom: 16px !important;
+    margin-right: 0 !important;
+}
+.oxygen-control-label {
+    opacity: 1 !important;
+}
+.oxygen-transform-control-wrap {
+    border: none !important;
+}
+.oxygen-apply-all-trigger {
+    opacity: 0.8 !important;
+}
+.oxygen-button-list {
+    margin-right: 0 !important;
+}
+#ct-controller-ui #oxygen-sidebar .oxygen-icon-button-list-button-default .oxygen-icon-button-list-option-icon-wrapper {
+    outline: none !important;
+    border-radius: 4px !important;
+}
+.oxygen-icon-button-list-big .oxygen-icon-button-list-option-icon-wrapper {
+    border-radius: 4px !important;
+}
+
+/* Code Editor */
+.oxygen-code-editor-apply {
+    opacity: 1 !important;
+}
+
+/* Blockpad view */
+.recoda-lpane {
+    border: none !important;
+}
+.rews-rebin-settings button {
+    border-left: none !important;
+}
+.recoda-lpane .rews-rebin-strip {
+    opacity: 1 !important;
+}
+.rews-rebin-strip button svg {
+    height: 20px !important;
+}
+
+/* New color */
+.oxygen-add-global-color-button {
+    width: fit-content !important;
+    padding: 8px 16px !important;
+    border-radius: 4px !important;
+    opacity: 1 !important;
+    border: none !important;
+}
+
+/* Stylesheets tab */
+.ct-style-sheets-tab .ct-button {
+    padding: 8px 12px !important;
+    border-radius: 4px !important;
+    opacity: 1 !important;
+}
+.oxygen-sidebar-template-button {
+    border-radius: 4px !important;
+    opacity: 1 !important;
+    border: none !important;
+}
+
+/* Stylesheets */
+.oxygen-editing-stylesheet-message { 
+    padding: 8px 0px !important;
+}
+.oxygen-editing-stylesheet-message.ng-scope .oxygen-sidebar-template {
+    border: none !important;
+}
+.oxygen-editing-stylesheet-message h1 {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+/* Structure/DOM tree */
+.ct-elements-managers-top {
+    margin: 0 !important;
+    width: 100% !important;
+    padding: 0 16px !important;
+}
+#rews-filter-control label svg {
+    width: 20px !important;
+}
+.ct-elements-managers-bottom .ct-node-options {
+    top: 4px !important;
+}
+.ct-elements-managers-top :is(.ct-butt-expand-all, .ct-butt-collapse-all) {
+    color: var(--custom-light) !important;
+}
+
+/* History */
+.ct-history-tab .ct-button {
+    padding: 8px 12px !important;
+    border-radius: 4px !important;
+    opacity: 1 !important;
+    border: none !important;
+}
+
+/* Bottom bar */
+.rews-cmd-right-wrap, .rews-cmd-left-wrap, .rews-cmd-center-wrap, #tbf-cl, #tbf-cl .cm-s-dracula.CodeMirror, #tbf-cl .cm-s-dracula .CodeMirror-gutter, #rews-command-container .tbf-item {
+    border: none !important;
+}
+.tbf-label {
+    padding: 0px 4px 6px 4px !important;
+}
+#tbf-cl #label-for-cli {
+    padding: 0px 4px 6px 4px !important;
+}
+#tbf-cl .CodeMirror-lines {
+    border-radius: 4px !important;
+}
+#rewsCanvasControll p {
+    text-transform: lowercase !important;
+}
+#rews-power-menu * {
+    padding-bottom: 2px !important;
+}
+#rewsCanvasControll * {
+    padding-bottom: 6px !important;
+}
+#rewsResponsiveControl * {
+    padding-bottom: 1px !important;
+}
+#rews-canvas-settings, #rews-responsive-settings {
+    border-radius: 8px !important;
+}
+.rews-popup > * {
+    border: none !important;
+}
+:is(#rews-canvas-settings, #rews-responsive-settings) .rews-title {
+    border-radius: 8px 8px 0 0 !important;    
+}
+:is(#rews-canvas-settings, #rews-responsive-settings) section {
+    border-radius: 0 0 8px 8px !important;
+}
+#rews-canvas-settings #wsCanvasReset {
+    padding: 8px 12px !important;
+    border-radius: 4px !important;
+    opacity: 1 !important;
+    border: none !important;
+}
+.rews-input-item p {
+    text-transform: lowercase !important;
+    opacity: 1 !important;
+}
+.rews-settings-item input:focus {
+    outline: none !important;
+    border-radius: 4px !important;
+}
+
+/* Conditions */
+.oxygen-data-dialog, .oxygen-data-dialog-options {
+    outline: none !important;
+    overflow: hidden !important;
+}
+
+.oxygen-condition-builder-add-condition a {
+    width: fit-content !important;
+    padding: 8px 12px !important;
+    border-radius: 4px !important;
+}
+
+/* Import Classes */
+
+/* Recoda alerts */
+#rews-alert {
+    outline: none !important;
+}
+
+/* Design Sets */
+.oxygen-add-section-library-menu-subcategories a {
+    border-radius: 4px !important;
+    transition: 0.2s margin !important;
+    margin-bottom: 12px !important;
+}
+.oxygen-add-section-library-menu {
+    width: calc(100% - 18px) !important;
+    margin: 4px auto !important;
+}
+
+/* Design sets sections and elements */
+.oxygen-add-section-library-categories, .oxygen-folder-categories-categories, .oxygen-folder-no-padding, .ct-api-items:not(.oxygen-folder-design-sets-experimental) {
+    grid-template-columns: 1fr !important;
+}
+.oxygen-add-section-library-menu-category {
+    width: 100% !important;
+    padding: 0 !important;
+}
